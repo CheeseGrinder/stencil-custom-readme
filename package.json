@@ -1,0 +1,45 @@
+{
+  "name": "@cheese-grinder/stencil-custom-readme",
+  "version": "0.1.1",
+  "description": "Generate dustom readme docs for StencilJS",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "https://github.com/CheeseGrinder",
+  "keywords": [
+    "stencil",
+    "readme",
+    "custom",
+    "docs-readme"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/CheeseGrinder/stencil-custom-readme#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheeseGrinder/stencil-custom-readme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CheeseGrinder/stencil-custom-readme/issues"
+  },
+  "scripts": {
+    "prebuild": "rm -rf ./dist ./build",
+    "build": "tsc -p . && rollup -c rollup.config.mjs",
+    "prettier": "prettier --cache 'src/**/*.ts' --write"
+  },
+  "peerDependencies": {
+    "@stencil/core": ">= 4.0.0"
+  },
+  "devDependencies": {
+    "@stencil/core": "^4.0.0",
+    "@types/node": "^20.11.30",
+    "prettier": "^3.2.5",
+    "rollup": "^4.13.0",
+    "typescript": "~5.0.0"
+  }
+}
