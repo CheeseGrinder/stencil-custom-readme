@@ -10,6 +10,7 @@ export function docsReadme(options?: ReadmeOptions): OutputTargetCustom {
   return {
     type: 'custom',
     name: 'docs-readme',
+    taskShouldRun: 'onBuildOnly',
     async generator(config: Config, compilerCtx: CompilerCtx, _buildCtx: BuildCtx, docs: JsonDocs) {
       const timespan = config.logger!.createTimeSpan('starting generate readme documentation');
       await Promise.all(

@@ -17,5 +17,5 @@ export default {
       file: pkg.module,
     },
   ],
-  external: ['@stencil/core']
+  external: ['@stencil/core', 'path']
 };

@@ -1,6 +1,6 @@
 {
   "name": "@cheese-grinder/stencil-custom-readme",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Generate dustom readme docs for StencilJS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -33,13 +33,13 @@
     "prettier": "prettier --cache 'src/**/*.ts' --write"
   },
   "peerDependencies": {
-    "@stencil/core": ">= 4.0.0"
+    "@stencil/core": ">= 4.18.3"
   },
   "devDependencies": {
-    "@stencil/core": "^4.0.0",
-    "@types/node": "^20.11.30",
-    "prettier": "^3.2.5",
-    "rollup": "^4.13.0",
-    "typescript": "~5.0.0"
+    "@stencil/core": "~4.18.3",
+    "@types/node": "^20.14.8",
+    "prettier": "^3.3.2",
+    "rollup": "^4.18.0",
+    "typescript": "~5.5.2"
   }
 }
