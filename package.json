@@ -1,6 +1,6 @@
 {
   "name": "@cheese-grinder/stencil-custom-readme",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Generate dustom readme docs for StencilJS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
