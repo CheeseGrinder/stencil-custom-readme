@@ -50,5 +50,9 @@ function getDefault(prop: JsonDocsProp): string {
   const propDefault =
     prop.default === undefined ? (defaultFromTag === undefined ? undefined : defaultFromTag) : prop.default;
 
+  if (propDefault.includes('`')) {
+    return `<code>${propDefault.replace(/`/g, '\\`')}</code>`;
+  }
+
   return `\`${propDefault}\``;
 }
